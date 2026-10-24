@@ -159,7 +159,7 @@ h2 { margin: 0; font-family: var(--serif); font-size: clamp(3.2rem, 6vw, 7rem); 
 .visit { background: var(--paper); }
 .visit-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: clamp(3rem, 8vw, 9rem); align-items: center; }
 .visit-photo { margin: 0; }
-.visit-photo img { width: 100%; aspect-ratio: 904 / 447; object-fit: cover; object-position: center; }
+.visit-photo img { width: 100%; height: auto; aspect-ratio: auto; object-fit: contain; }
 .visit-copy address { margin: 2.5rem 0 1rem; font-family: var(--serif); font-size: clamp(1.8rem, 3.4vw, 3.5rem); font-style: normal; line-height: 1.08; }
 .visit-copy > p:not(.eyebrow) { max-width: 42ch; color: var(--muted); }
 .visit-actions { display: flex; align-items: center; gap: 2rem; margin: 2.5rem 0; }
