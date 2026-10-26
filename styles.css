@@ -89,6 +89,10 @@ h2 { margin: 0; font-family: var(--serif); font-size: clamp(3.2rem, 6vw, 7rem); 
 .stat strong { font-family: var(--serif); font-size: clamp(2.8rem, 5vw, 5.4rem); font-weight: 400; line-height: 1; }
 .stat sup { font-size: .45em; }
 .stat span { color: var(--muted); font-size: .67rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.space-panorama { margin-top: clamp(3.5rem, 6vw, 6.5rem); margin-bottom: 0; }
+.space-panorama img { width: 100%; height: auto; aspect-ratio: 968 / 424; object-fit: cover; }
+.space-panorama figcaption { display: flex; justify-content: space-between; gap: 1rem; margin-top: .9rem; color: var(--muted); font-size: .66rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.space-panorama figcaption span:first-child { color: var(--ink); }
 
 .possibilities { position: relative; overflow: hidden; color: #fff; background: var(--ink); }
 .ambient-orb { position: absolute; width: 50vw; height: 50vw; left: -15vw; top: 25%; border-radius: 50%; background: radial-gradient(circle, rgba(237,106,98,.17), transparent 67%); filter: blur(18px); pointer-events: none; transform: translate3d(var(--orb-x,0),var(--orb-y,0),0); transition: transform .2s ease-out; }
@@ -234,6 +238,7 @@ h2 { margin: 0; font-family: var(--serif); font-size: clamp(3.2rem, 6vw, 7rem); 
   .stats { grid-template-columns: 1fr 1fr; }
   .stat { padding: 1.5rem .8rem; border-bottom: 1px solid var(--line); }
   .stat:nth-child(3) { border-left: 0; }
+  .space-panorama figcaption { flex-direction: column; gap: .3rem; }
   .section-head, .proof-intro { grid-template-columns: 1fr; }
   .section-head > p:last-child, .instagram-link { grid-column: 1; justify-self: start; }
   .mode-switcher { margin-top: 2.5rem; }
